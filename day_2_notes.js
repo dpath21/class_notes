@@ -38,6 +38,6 @@
 // to push the remote repository:
 // git push origin master 
 
-// one last note
+// one last note -- make sure you save your files in VSC before committing!
 
 
