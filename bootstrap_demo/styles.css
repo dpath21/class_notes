@@ -1,0 +1,11 @@
+body {
+    background-color: #cf9bf2;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#mainTextContainer {
+    border: 6px solid white;
+    border-radius: 3px;
+    padding: 2%;
+}

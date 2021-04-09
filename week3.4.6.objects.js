@@ -61,8 +61,34 @@ let manager = {
     firstName: "Brad",
     lastName: "Titus",
     birthYear: 1990,
-    calcAge: function() {
-      return 2021 - this.birthYear
+    //First way takes property from this.birthYear
+    // setAge: function() {
+    //     return 2021 - this.birthYear //uses THIS
+    // }
+    //Second way requires parameter of birthYear from outside
+    // setAge: function(birthYear) {
+    // //   return 2021 - manager.birthYear //using "manager.birthYear" would allow an error
+    setAge: function () {
+        this.age = 2021 - this.birthYear //this creates a new property AGE using the THIS inside of the function this way, with value of calculated result
     }
+
 }
-console.log(manager.calcAge())
+manager.setAge()
+console.log(manager.age)
+ // when working in objects you can only use function EXPRESSIONS; not hoisted, not declared
+
+//  function setAge(){
+//      //do something [FUNCTION DECLARATION]
+//  }
+//  setAge() //calls the function
+
+// //Function EXPRESSION: 
+// let setAge = function () {
+//     // do something
+// }
+
+// let setAge = () => {
+//     // do something; you can't use arrow fx within an object
+// }
+
+// DRY = do not repeat yourself
