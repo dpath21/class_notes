@@ -46,6 +46,7 @@ teacher.lastName = "Niemczyk";
 teacher.className = "Web Development";
 teacher.isTenured = true;
 
+console.log(teacher)
 
 teacher.whatKind = function() {
     if (this.isTenured) {
@@ -54,3 +55,18 @@ teacher.whatKind = function() {
         this.kind = "Teacher is not tenured"
     }
 }
+
+let movie = new Object
+movie.name = "Finding Nemo";
+movie.runTime = 100;
+movie.genre = "Animation/Adventure"
+movie.characters = {
+  movie.character.Name1 = "Marlin"
+  movie.character.Age2 = 30;
+  characterItems1 = ("Turtle", "Tank", "Coral")
+  characterName2 = "Dory"
+  characterAge2 = 35;
+  characterItems2 = ("Sydney", "Boat", "Memory Loss")
+}
+
+console.log(movie)
