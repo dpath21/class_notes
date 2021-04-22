@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <!--Functions are called METHODS when they are used in an object!-->
+<h1>Hello World</h1>
+<p id='testParagraph'>sample text</p>
+<p class='sampleClass'>This paragraph has a sample class</p>
+
+<button id="clickThisButton">Click Here</button>
+
+
+    <script type="text/javascript">
+    /*all of our JS code will go here*/
+    var x = 10
+    console.log(x);
+
+    document.getElementById('testParagraph').style.color= "blue";
+
+    console.log(document.getElementById('testParagraph').style.color) //this will print the value we have assigned to doc.elemById.style.color
+
+    console.log(document.querySelectorAll('p.sampleClass'))
+
+    // document.querySelectorAll('p.sampleClass')[0].innerText = "This changes the text"
+
+    document.querySelectorAll('p.sampleClass')[0].innerHTML = "<span>This is a whole new element</span>"; //by setting innerHTML to BLANK (" ") you can ERASE the ELEMENTS
+document.getElementById('clickThisButton').addEventListener('click', (details) => {
+   details.target.style.backgroundColor = 'red';
+})
+
+    </script>
+
+
+</body>
+</html>
